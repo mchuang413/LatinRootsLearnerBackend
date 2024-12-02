@@ -1,27 +1,49 @@
-# Rootified BACKEND
+# This is only the backend service for the SAT Latin Roots Learning platform: [Rootified](https://rootified.me)
 
-**Rootified** is an educational platform that helps students learn and master Latin roots to enhance their English vocabulary. By breaking down words into their fundamental roots, **Rootified** aims to improve students' language skills, comprehension, and confidence with English vocabulary. The website offers interactive tools, quizzes, and resources to make learning engaging and effective.
-*(users with accounts unlock more features)*
+## The Next.js frontend repo is here: https://github.com/mchuang413/LatinRootsLearner
 
-## Table of Contents
+### [Hosted on DigitalOcean]
 
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+New updated features include the following:
 
-## Overview
+- User Roles
+    - Add roles (admin, teacher, student) with different permissions.
 
-The English language is deeply influenced by Latin roots, prefixes, and suffixes. **Rootified** provides students with an intuitive, structured approach to learning these roots, helping them improve word comprehension and vocabulary. With various exercises and resources, **Rootified** supports students in building a stronger, more versatile vocabulary, aiding in reading comprehension, writing, and even standardized testing.
+- Password Reset
+    - Allow users to reset passwords via email with a secure token.
 
-## Features
+- Quiz Results History
+    - Track user performance on quizzes, including correct/incorrect answers and timestamps.
 
-- **Interactive Root Library**: Explore a comprehensive library of Latin roots, prefixes, and suffixes, each with detailed explanations and example words.
-- **Custom Quizzes**: Practice using customizable quizzes tailored to different learning levels and goals.
-- **Progress Tracking**: Track learning progress and identify areas for improvement.
-- **User-Friendly Interface**: Simple, accessible design focused on enhancing learning engagement.
-- **Responsive Design**: Access **Rootified** from any device, whether desktop, tablet, or mobile.
+- Leaderboard
+    - Display the top users based on points.
+
+- Custom Quiz Creation
+    - Allow admins/teachers to add new quiz questions with options and difficulty levels.
+
+- Email Notifications
+    - Send email updates for quiz completion, progress reports, or account confirmations.
+
+- Gamification
+    - Add badges, levels, and streak tracking to encourage user engagement.
+
+- User Analytics Dashboard
+    - Show progress (total quizzes, correct/incorrect ratio, streaks).
+
+- Advanced Quiz Search
+    - Enable users to search quizzes by keyword, difficulty, or topic.
+
+- Real-Time Updates
+    - Notify users of leaderboard changes or new quizzes using WebSocket.
+
+- Admin Dashboard
+    - Admins can manage users, view activity, and handle content moderation.
+
+- Account Deletion
+    - Allow users to delete their accounts after verifying credentials.
+
+- OAuth Login
+    - Enable third-party logins (Google, Facebook, etc.) for easier access.
+
+- Quiz Retry Suggestions
+    - Suggest retrying incorrect words or quizzes to reinforce learning.
